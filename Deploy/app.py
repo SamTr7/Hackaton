@@ -129,17 +129,12 @@ def load_trained_yolo_model(model_path: str) -> YOLO:
 st.markdown(
     """
     <div class="hero-box">
-        <h1 style="margin:0;">Deteccion de granos de cacao</h1>
-        <p style="margin:0.45rem 0 0 0; font-size:1.03rem;">
-            Interfaz simplificada: solo sube imagenes y el modelo ONNX fine-tuned hace la inferencia.
-        </p>
+        <h1 style="margin:0;">CACAO VISION</h1>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-st.caption("Backend: ONNX (best.onnx)")
-st.caption(f"Modelo en uso: {TRAINED_ONNX_PATH}")
 
 uploaded_images = st.file_uploader(
     "Sube una o varias imagenes",
@@ -150,7 +145,7 @@ uploaded_images = st.file_uploader(
 st.markdown(
     """
     <div class="hint-box">
-        Tip: usa imagenes enfocadas y con buena iluminacion para mejorar la deteccion.
+        Usa imagenes enfocadas y con buena iluminacion para mejorar la deteccion.
     </div>
     """,
     unsafe_allow_html=True,
